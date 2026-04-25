@@ -50,11 +50,13 @@ pdf_files = [
 ]
 ```
 
-Run it with:
+Run `main()` with:
 
 ```bash
 poetry run python src/pdf_merger/main.py
 ```
+
+This command runs the `main()` function in `src/pdf_merger/main.py`.
 
 Make sure those files exist in the working directory before running the script.
 
