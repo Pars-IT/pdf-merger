@@ -11,6 +11,9 @@ dependencies = [
     "pypdf (>=6.10.2,<7.0.0)"
 ]
 
+[project.scripts]
+start = "pdf_merger.main:main"
+
 [tool.poetry]
 packages = [{include = "pdf_merger", from = "src"}]
 

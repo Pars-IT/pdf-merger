@@ -40,25 +40,20 @@ merge_pdfs(
 
 ### Run the example script
 
-The current `main()` function uses a hardcoded list of files:
+The current `main()` function looks for sequential files in the working directory:
 
-```python
-pdf_files = [
-    "file1.pdf",
-    "file2.pdf",
-    "file3.pdf",
-]
-```
+- `file1.pdf` is required
+- `file2.pdf` through `fileN.pdf` are merged automatically while they exist
 
 Run `main()` with:
 
 ```bash
-poetry run python src/pdf_merger/main.py
+poetry run start
 ```
 
 This command runs the `main()` function in `src/pdf_merger/main.py`.
 
-Make sure those files exist in the working directory before running the script.
+If `file1.pdf` does not exist, the script prints an error and exits.
 
 ## Output
 
